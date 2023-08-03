@@ -1,6 +1,6 @@
 //define a function that is our component
 // we can also destructure your props directly from the parameter list
-function MovieDisplay(movie) {
+function MovieDisplay({movie}) {
   //function to return loaded JSX
   const loaded = () => {
     //the component must return some JSX

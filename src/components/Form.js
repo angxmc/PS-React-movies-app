@@ -22,7 +22,7 @@ export default function Form(props) {
 
   //the components must return some JSX
   return (
-    <form>
+    <form onSubmit={handleSubmit}>
       <input
         type="text"
         name="searchterm"
