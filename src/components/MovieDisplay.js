@@ -1,6 +1,6 @@
 //define a function that is our component
 // we can also destructure your props directly from the parameter list
-function MovieDisplay({movie}) {
+function MovieDisplay({ movie }) {
   //function to return loaded JSX
   const loaded = () => {
     //the component must return some JSX
@@ -14,12 +14,12 @@ function MovieDisplay({movie}) {
     );
   };
   //function to return loading JSX
-  const loading = () =>{
-    return <h1>No movie to display</h1>
-  }
+  const loading = () => {
+    return <h1>No movie to display</h1>;
+  };
 
   //ternary operator will determine which functions JSX we will return
-  return movie ? loaded():loading()
+  return movie ? loaded() : loading();
 }
 
 export default MovieDisplay;
